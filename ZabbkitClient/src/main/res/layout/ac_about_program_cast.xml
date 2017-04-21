@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_main_bg"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:overScrollMode="always" >
+
+        <TextView
+            android:id="@+id/view_version"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/grey" />
+
+        <ImageView
+            android:id="@+id/view_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logotype"
+            android:paddingTop="4dp"
+            android:src="@drawable/logo_zabbkit" />
+
+        <TextView
+            android:id="@+id/edit_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/about_app"
+            android:textColor="@color/milk_grey"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+            <TextView
+                android:id="@+id/view_cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="@string/cast" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/view_cast"
+                android:background="@color/about_line"
+                android:layout_marginLeft="35dp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/view_cast"
+                android:background="@color/about_line"
+                android:layout_marginRight="35dp" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/AboutCastGreyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/android_developing" />
+
+        <TextView
+            style="@style/AboutCastWhiteView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:maxLines="5"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/android_programmers" />
+
+        <TextView
+            style="@style/AboutCastGreyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/interface_design" />
+
+        <TextView
+            style="@style/AboutCastWhiteView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/designers" />
+
+        <TextView
+            style="@style/AboutCastGreyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tesing" />
+
+        <TextView
+            style="@style/AboutCastWhiteView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/testers" />
+
+        <TextView
+            style="@style/AboutCastGreyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/policeman_in_pub" />
+
+        <TextView
+            style="@style/AboutCastWhiteView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/policeman" />
+
+        <TextView
+            android:id="@+id/view_developed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="56dp"
+            android:drawableRight="@drawable/logo_cactus"
+            android:gravity="center"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:textColor="@color/about_grey_title"
+            android:text="@string/developed_by"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/about_bottom_background"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="17dp"
+                android:src="@drawable/cast_laser_sword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp"
+                android:text="@string/force_with_you"
+                android:textColor="@color/about_force"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

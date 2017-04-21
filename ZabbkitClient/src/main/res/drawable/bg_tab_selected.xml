@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="rectangle">
+			<solid android:color="@color/divider" />
+		</shape>
+	</item>
+	<item
+		android:left="1dip"
+		android:right="1dip">
+		<shape android:shape="rectangle">
+			<solid android:color="@color/bg_tab_selected" />
+		</shape>
+	</item>
+</layer-list>

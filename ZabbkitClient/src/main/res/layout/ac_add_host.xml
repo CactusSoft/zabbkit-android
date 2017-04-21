@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp"
+              android:background="@color/grey_main_bg">
+
+    <EditText
+            android:id="@+id/edit_host_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_host_url"
+            android:singleLine="true"
+            android:layout_marginTop="4dp"/>
+
+    <EditText
+            android:id="@+id/edit_host_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_host_name"
+            android:layout_marginTop="4dp"/>
+
+    <EditText
+            android:id="@+id/edit_host_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_host_login"
+            android:singleLine="true"
+            android:layout_marginTop="4dp"/>
+
+    <EditText
+            android:id="@+id/edit_host_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_host_pass"
+            android:inputType="textPassword"
+            android:layout_marginTop="4dp"/>
+
+    <CheckBox
+            android:id="@+id/check_ssl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trust_self_signed_ssl"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"/>
+
+    <Button
+            android:id="@+id/btn_host_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/txt_button"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/button_add_host"
+            style="@style/Base.TextAppearance.AppCompat.Button"/>
+
+</LinearLayout>

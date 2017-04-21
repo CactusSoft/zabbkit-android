@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp">
+
+	<View
+		android:id="@+id/color_stroke"
+		android:layout_width="4dp"
+		android:layout_height="48dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_margin="8dp" />
+
+	<TextView
+		android:id="@+id/event_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/color_stroke"
+		android:paddingTop="8dp"
+		android:paddingBottom="4dp"
+		android:textSize="@dimen/list_text_size"
+		android:textColor="@android:color/white" />
+
+	<TextView
+		android:id="@+id/date_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/event_view"
+		android:layout_toRightOf="@+id/color_stroke"
+		android:layout_toLeftOf="@+id/duration_view"
+		android:textColor="@color/grey"
+		android:textSize="@dimen/list_text_size_secondary" />
+
+	<TextView
+		android:id="@+id/duration_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignTop="@id/date_view"
+		android:textColor="@color/grey"
+		android:textSize="@dimen/list_text_size_secondary" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/divider"
+		android:layout_alignParentBottom="true"
+		android:layout_marginTop="8dp"
+		android:layout_below="@id/date_view" />
+</RelativeLayout>

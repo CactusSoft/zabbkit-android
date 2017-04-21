@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/trigger_layout_item"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp">
+
+	<View
+		android:id="@+id/color_stroke"
+		android:layout_width="4dp"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:layout_margin="8dp" />
+
+	<TextView
+		android:id="@+id/date_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@id/color_stroke"
+		android:layout_toLeftOf="@+id/duration_view"
+		android:textSize="@dimen/list_text_size_trigger_history"
+		android:textColor="@android:color/white" />
+
+	<TextView
+		android:id="@+id/duration_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:textSize="@dimen/list_text_size_trigger_history"
+		android:textColor="@android:color/white" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="-1dp"
+		android:background="@color/divider" />
+
+</RelativeLayout>

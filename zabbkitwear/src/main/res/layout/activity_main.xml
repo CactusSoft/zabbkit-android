@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_box="left|bottom|right">
+
+        <android.support.wearable.view.WearableListView
+            android:id="@+id/triggers_list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"></android.support.wearable.view.WearableListView>
+
+        <RelativeLayout
+            android:id="@+id/alert_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/alert_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/connect" />
+        </RelativeLayout>
+    </FrameLayout>
+</android.support.wearable.view.BoxInsetLayout>

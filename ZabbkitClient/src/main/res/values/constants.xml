@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="tab_triggers_tag">triggers_tab</string>
+    <string name="tab_data_tag">data_tab</string>
+    <string name="tab_events_tag">events_tab</string>
+    
+</resources>

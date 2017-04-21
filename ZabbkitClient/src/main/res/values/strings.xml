@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZabbKit</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_host">Add host</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="url">Url</string>
+    <string name="log_in">Log in</string>
+    <string name="server_name">Server name</string>
+    <string name="all">All</string>
+    <string name="about_app">"Client-application for Zabbix monitoring system."</string>
+    <string name="developed_by">"Developed by:"</string>
+    <string name="write_to_developers">Contact Us</string>
+    <string name="support_email_address">elena.bukarova@cactussoft.biz</string>
+    <string name="support_email_subject">About ZabbKit</string>
+    <string name="sending_message">Send message</string>
+    <string name="version_template">"V %1$s"</string>
+    <string name="all_servers">All servers</string>
+    <string name="colors_used_for_triggers">Colors used for trigger markers</string>
+    <string name="button_add_host">Add host</string>
+    <string name="add_host_url">URL</string>
+    <string name="add_host_name">Name</string>
+    <string name="add_host_login">Login</string>
+    <string name="add_host_pass">Password</string>
+    <string name="trust_self_signed_ssl">Trust self-signed SSL certificate</string>
+
+    <!-- SSL certificates -->
+    <string name="hostname">"Hostname: "</string>
+    <string name="subscriber">"Signed by: "</string>
+    <string name="end_validity_period">"Valid till: "</string>
+
+    <!-- Action bar -->
+    <string name="server_list">Server List</string>
+    <string name="trigger_history">Trigger history</string>
+    <string name="slide_menu">Slide menu</string>
+    <string name="servers_menu">Servers menu</string>
+    <string name="logotype">Logotype</string>
+
+    <!-- Sharing -->
+    <string name="share_graph_subject">Look at this graph!</string>
+
+    <!-- Overview Tabs -->
+    <string name="triggers">TRIGGERS</string>
+    <string name="data">DATA</string>
+    <string name="events">EVENTS</string>
+
+    <!-- About Program Tabs -->
+    <string name="cast">CAST</string>
+    <string name="legend">LEGEND</string>
+
+    <!-- Side navigation menu -->
+    <string name="overview">Overview</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="graphs">Graphs</string>
+    <string name="notifications">Notifications</string>
+    <string name="about_program">About</string>
+    <string name="exit">Logout</string>
+    <string name="hosts">Hosts</string>
+
+    <!-- Messages -->
+    <string name="loading">Loading</string>
+    <string name="fill_fields">Fill all fields, please</string>
+    <string name="logout_impossible">Logout impossible</string>
+    <string name="logout_successful">Logout successful</string>
+    <string name="no_data">No data</string>
+    <string name="invalid_url">Invalid server url</string>
+    <string name="connect_failed">Can\'t connect to server</string>
+    <string name="connect_failed_no_zabbix">There\'s no Zabbix on other side. Check your URL.</string>
+    <string name="certificate_not_trust">SSL certificate is not trusted, would you like to continue?</string>
+    <string name="certificate_not_added">SSL certificate not added!</string>
+    <string name="hostname_not_found">not found</string>
+    <string name="no_bookmarks">There\'s no bookmarks yet.\rYou can add any graph here. Just open a graph, select interesting period and tap \"Add to Bookmarks\"</string>
+    <string name="no_hosts">There\'s no hosts yet."</string>
+    <string name="no_internet">There is no internet connection available. \rCheck settings?</string>
+    <string name="no_internet_title">Sorry</string>
+    <string name="graph_saved">The graph has been saved and added to gallery</string>
+    <string name="graph_not_saved">The graph has not been saved</string>
+    <string name="graph_not_send">The graph could not be send</string>
+    <string name="http_basic_auth">HTTP Auth</string>
+    <string name="url_invalid">URL is invalid</string>
+
+    <!-- Threat degrees -->
+    <string name="not_classified">Not classified</string>
+    <string name="information">Information</string>
+    <string name="warning">Warning</string>
+    <string name="average">Average</string>
+    <string name="high">High</string>
+    <string name="disaster">Disaster</string>
+
+    <!-- About screen CAST -->
+    <string name="android_developing">Android developing</string>
+    <string name="android_programmers">Elena Bukarova\nSergey Tarasevich\nEvgeny Avrukevich\nDmitry Kalenchuk\nAlexey Stulnikov</string>
+    <string name="interface_design">Interface design</string>
+    <string name="designers">Leonid Vozniuk</string>
+    <string name="tesing">Testing</string>
+    <string name="testers">Nikolay Rasputin</string>
+    <string name="policeman_in_pub">Policeman in the pub</string>
+    <string name="policeman">Yan Oreshchenkov</string>
+    <string name="force_with_you">MAY THE FORCE BE WITH YOU</string>
+
+    <!-- About screen LEGEND -->
+    <string name="ok">OK</string>
+    <string name="ok_state">Your weapons, you will not need them</string>
+    <string name="not_classified_state">Difficult to see. Always in motion is the future</string>
+    <string name="information_state">Mind what you have learned. Save you it can</string>
+    <string name="warning_state">Named must your fear be before banish it you can</string>
+    <string name="average_state">Happens to every guy sometimes this does</string>
+    <string name="high_state">Hurry, the galaxy is in danger</string>
+    <string name="disaster_state">May the force be with you</string>
+
+    <!-- Buttons -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Push notifications -->
+    <string name="notif_title">ZabbKit</string>
+    <string name="notif_reg_id_changed_title">Token has changed</string>
+    <string name="notif_reg_id_changed_ticker">Token for push notifications has changed!</string>
+    <string name="notif_reg_id_changed_text_format">Token for push notifications has changed to \'%s\'</string>
+    <string name="txt_notifications_info">It\'s possible to receive push notifications about server events on your smartphone. Detailed instructions are available on Zabbix community forum:\n<a href="https://www.zabbix.com/forum/showthread.php?p=136028">https://www.zabbix.com/forum/showthread.php?p=136028</a></string>
+    <string name="txt_notifications_info_id">Your ID:</string>
+    <string name="btn_send_email_instructions">Send it on e-mail</string>
+    <string name="label_dev_id_not_detected">Your ID isn\'t registered yet&#8230;</string>
+    <string name="email_push_notif_subject">Zabbkit Push Notifications</string>
+    <string name="email_push_notif_text_format">
+<![CDATA[It\'s possible to receive push notifications about server events on your smartphone. Detailed instructions are available on Zabbix community forum:<br />
+		<a href="https://www.zabbix.com/forum/showthread.php?p=136028">https://www.zabbix.com/forum/showthread.php?p=136028</a><br /><br /><b>Your ID:</b><br />]]>
+%s</string>
+    <string name="txt_gcm_registration_failed">Unable to register your device in Google Cloud Messaging. This feature is not available.</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_save">Save to gallery</string>
+    <string name="menu_bookmark">Add to bookmarks</string>
+    <string name="period_1h">1h</string>
+    <string name="period_2h">2h</string>
+    <string name="period_3h">3h</string>
+    <string name="period_6h">6h</string>
+    <string name="period_12h">12h</string>
+    <string name="period_1d">1d</string>
+    <string name="period_1w">1w</string>
+    <string name="period_2w">2w</string>
+    <string name="period_1m">1m</string>
+    <string name="period_2m">2m</string>
+    <string name="period_3m">3m</string>
+    <string name="period_6m">6m</string>
+    <string name="period_1y">1y</string>
+
+    <!-- Bookmarks -->
+    <string name="bookmark_added">Graph was successfully added to bookmarks</string>
+    <string name="bookmark_not_added">Something gone wrong! Graph was not added to bookmarks</string>
+    <string name="bookmark_removed">Graph was successfully removed from bookmarks</string>
+    <string name="bookmark_not_removed">Something gone wrong! Graph still at bookmarks</string>
+
+</resources>

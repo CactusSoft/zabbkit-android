@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item>Overview</item>
+        <item>Bookmarks</item>
+        <item>Notifications</item>
+        <item>Hosts</item>
+        <item>About</item>
+        <item>Logout</item>
+    </string-array>
+</resources>

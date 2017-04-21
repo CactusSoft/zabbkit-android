@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        releaseSigning {
+            keyAlias 'cactus_key'
+            keyPassword 'cactusandroidkey'
+            storeFile file('C:\\Users\\jenkins\\cactus_keystore.keystore')
+            storePassword 'cactusandroidkey'
+        }
+
+    }
+
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+    defaultConfig {
+        applicationId "ru.zabbkit.android"
+        minSdkVersion 20
+        targetSdkVersion 21
+//        versionCode "$System.env.VERSION_CODE".toInteger()
+        versionCode 11
+        versionName "1.0.$System.env.BUILD_NUMBER.$System.env.SVN_REVISION"
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.testSigning
+            signingConfig signingConfigs.releaseSigning
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':ZabbkitCommon')
+    compile 'com.google.android.support:wearable:1.1.0'
+    compile 'com.google.android.gms:play-services-wearable:8.4.0'
+}

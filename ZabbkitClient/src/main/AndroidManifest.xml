@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.zabbkit.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Permissions for GCM -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="ru.zabbkit.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="ru.zabbkit.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".app.ZabbkitApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_logo"
+        android:theme="@style/Zabbkit.Theme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.SlideMenuActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.activity.ServerListActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Zabbkit.Theme.HomeUp" />
+        <activity
+            android:name=".ui.activity.HostListActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Zabbkit.Theme.HomeUp" />
+        <activity
+            android:name=".ui.activity.TriggerHistoryActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Zabbkit.Theme.HomeUp" />
+        <activity
+            android:name=".ui.activity.GraphActivity"
+            android:theme="@style/Zabbkit.Theme.HomeUp" />
+        <activity
+            android:name=".ui.activity.HostActivity"
+            android:theme="@style/Zabbkit.Theme.HomeUp" />
+        <activity
+            android:name=".ui.activity.AddHostActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Zabbkit.Theme.HomeUp" />
+
+        <receiver
+            android:name=".receiver.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="ru.zabbkit.android" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".provider.TmpFileProvider"
+            android:authorities="ru.zabbkit.android.provider.TmpFileProvider"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:writePermission="true" />
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="e6bc0c51a8568e5b9684e60b90b4162118f576ff" />
+
+        <provider
+            android:name=".db.provider.DBProvider"
+            android:authorities="ru.zabbkit.android.db.provider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".service.TriggersRequestService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="triggers" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

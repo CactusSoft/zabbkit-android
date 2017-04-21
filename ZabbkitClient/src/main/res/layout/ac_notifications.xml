@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/grey_main_bg">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/txt_notifications_info"
+			android:layout_marginTop="@dimen/about_program_margins_vert"
+			android:layout_marginBottom="@dimen/about_program_margins_vert"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:textSize="@dimen/textview_size"
+			android:linksClickable="true"
+			android:textColor="@color/milk_grey"
+			android:autoLink="web"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/txt_notifications_info_id"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:textSize="@dimen/textview_size"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/reg_id"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:background="@android:color/background_dark"
+			android:textColor="@android:color/darker_gray"
+			android:textSize="@dimen/textview_size"
+			android:textIsSelectable="true"/>
+
+		<TextView
+			android:id="@+id/warning"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:textSize="@dimen/textview_size"
+			android:text="@string/txt_gcm_registration_failed"
+			android:textColor="@android:color/darker_gray"
+			android:textStyle="bold"
+			android:visibility="gone"/>
+
+		<Button
+			android:id="@+id/send_email"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/about_program_margins_vert"
+			android:text="@string/btn_send_email_instructions"
+			android:layout_marginLeft="@dimen/about_program_margins_hor"
+			android:layout_marginRight="@dimen/about_program_margins_hor"
+			android:textColor="@color/txt_button"
+			android:textSize="16sp"
+			style="@style/Base.TextAppearance.AppCompat.Button" />
+	</LinearLayout>
+</ScrollView>

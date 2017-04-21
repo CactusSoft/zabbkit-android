@@ -1,0 +1,86 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="LeftMenuButton">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">@dimen/left_menu_padding</item>
+        <item name="android:background">@drawable/btn_side_menu_selector</item>
+        <item name="android:paddingLeft">@dimen/left_menu_padding</item>
+        <item name="android:textColor">@color/milk_slide_menu_text</item>
+    </style>
+
+    <style name="SlideMenuStyle">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">@dimen/left_menu_padding</item>
+        <item name="android:background">@drawable/btn_side_menu_selector</item>
+        <item name="android:paddingLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:textColor">@color/milk_slide_menu_text</item>
+        <item name="android:layout_marginBottom">@dimen/left_menu_between_btn</item>
+        <item name="android:textSize">@dimen/left_menu_text_size</item>
+    </style>
+
+    <style name="GeneralTextView">
+        <item name="android:textSize">@dimen/list_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/grey_main_bg</item>
+    </style>
+
+    <style name="Zabbkit.Theme" parent="@style/Theme.AppCompat">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_nav_drawer</item>
+        <item name="actionBarStyle">@style/Zabbkit.ActionBar</item>
+        <item name="actionBarTabStyle">@style/Zabbkit.ActionBar.Tab</item>
+        <item name="actionBarTabBarStyle">@style/Zabbkit.ActionBar.TabBarStyle</item>
+        <item name="actionBarTabTextStyle">@style/Zabbkit.ActionBar.TabText</item>
+    </style>
+
+    <style name="Zabbkit.Theme.HomeUp">
+        <item name="homeAsUpIndicator">@drawable/ic_nav_up</item>
+    </style>
+
+    <style name="Zabbkit.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/grey_action_bar</item>
+        <item name="background">@color/grey_action_bar</item>
+    </style>
+
+    <style name="Zabbkit.ActionBar.Tab" parent="Widget.AppCompat.ActionBar.TabBar">
+        <item name="android:background">@drawable/bg_tab_selector</item>
+    </style>
+
+    <style name="Zabbkit.ActionBar.TabBarStyle" parent="Widget.AppCompat.ActionBar.TabBar">
+        <item name="android:divider">@color/divider</item>
+    </style>
+
+    <style name="Zabbkit.ActionBar.TabText" parent="Widget.AppCompat.ActionBar.TabText">
+        <item name="android:drawablePadding">8dip</item>
+        <item name="android:paddingLeft">8dip</item>
+    </style>
+
+    <style name="TopStateTextView">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="BottomStateTextView">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    
+    <style name="AboutCastGreyView">
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/about_grey_title</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    <style name="AboutCastWhiteView">
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+</resources>

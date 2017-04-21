@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="left_menu_offset">60dp</dimen>
+    <dimen name="left_menu_max_width">300dp</dimen>
+    <dimen name="left_menu_padding">9dp</dimen>
+    <dimen name="list_text_size">18sp</dimen>
+    <dimen name="list_text_size_secondary">14sp</dimen>
+	<dimen name="list_text_size_trigger_history">15sp</dimen>
+    <dimen name="textview_size">16sp</dimen>
+    <dimen name="list_text_left_padding">12dp</dimen>
+    <dimen name="list_image_left_padding">5dp</dimen>
+    <dimen name="list_image_right_padding">7dp</dimen>
+    <dimen name="textview_margins">5dp</dimen>
+    <dimen name="textview_padding">15dp</dimen>
+    <dimen name="list_text_right_padding">10dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="about_program_margins_vert">30dp</dimen>
+    <dimen name="about_program_margins_hor">33dp</dimen>
+    <dimen name="drawable_padding">6dp</dimen>
+    <dimen name="actionbar_padding_back">40dp</dimen>
+    <dimen name="left_menu_between_btn">1dp</dimen>
+    <dimen name="left_menu_text_size">18sp</dimen>
+    <dimen name="left_menu_user_text_size">14sp</dimen>
+    <dimen name="listitem_height">42dp</dimen>
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="actionbar_text_paddingleft">14dp</dimen>
+    <dimen name="back_icon_paddingleft">4dp</dimen>
+    <dimen name="view_height">52dp</dimen>
+
+</resources>

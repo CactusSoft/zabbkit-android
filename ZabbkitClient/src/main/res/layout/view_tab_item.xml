@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bg_tab_selector">
+
+	<TextView
+		android:id="@+id/tabItem"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:paddingTop="12dip"
+		android:paddingBottom="12dip"
+		android:drawablePadding="8dip"
+		android:textSize="13sp"
+		android:textColor="@color/txt_button" />
+
+</FrameLayout>

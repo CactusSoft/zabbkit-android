@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_slide_menu_normal">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/btn_menu_name"
+                style="@style/SlideMenuStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/textview_margins"
+                android:text="@string/server_name"
+                android:textColor="@color/grey_slide_menu_user_text"
+                android:textSize="@dimen/left_menu_user_text_size"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_slide_menu_line"/>
+
+        <Button
+                android:id="@+id/btn_menu_overview"
+                style="@style/SlideMenuStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:drawableLeft="@drawable/ic_drawer_overview"
+                android:onClick="onClick"
+                android:text="@string/overview"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_slide_menu_line"/>
+
+        <Button
+                android:id="@+id/btn_menu_bookmarks"
+                style="@style/SlideMenuStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:drawableLeft="@drawable/ic_drawer_bookmarks"
+                android:onClick="onClick"
+                android:text="@string/bookmarks"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_slide_menu_line"/>
+
+        <Button
+                android:id="@+id/btn_menu_notifications"
+                style="@style/SlideMenuStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:drawableLeft="@drawable/ic_drawer_notifications"
+                android:onClick="onClick"
+                android:text="@string/notifications"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_slide_menu_line"/>
+
+        <Button
+                android:id="@+id/btn_menu_hosts"
+                style="@style/SlideMenuStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:drawableLeft="@drawable/ic_server"
+                android:onClick="onClick"
+                android:text="@string/hosts"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_slide_menu_line"/>
+
+        <Button
+                android:id="@+id/btn_menu_about"
+                style="@style/SlideMenuStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:drawableLeft="@drawable/ic_drawer_about"
+                android:onClick="onClick"
+                android:text="@string/about_program"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_slide_menu_line"/>
+
+        <Button
+                android:id="@+id/btn_menu_exit"
+                style="@style/SlideMenuStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:drawableLeft="@drawable/ic_drawer_logout"
+                android:onClick="onClick"
+                android:text="@string/exit"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_slide_menu_line"/>
+    </LinearLayout>
+
+</ScrollView>

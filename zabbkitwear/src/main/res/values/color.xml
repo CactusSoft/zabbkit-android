@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#0d0d0d</color>
+    <color name="grey">#595959</color>
+    <color name="srv_grey">#777777</color>
+    <color name="list_color">#0a0a0a</color>
+    <color name="menu_grey">#939393</color>
+    <color name="cache_color">#00000000</color>
+    <color name="milk_grey">#a5a5a5</color>
+	<color name="txt_button">#fff3f3f3</color>
+
+	<!--New design colors-->
+
+    <color name="grey_main_bg">#2c2c2c</color>
+	<color name="bg_trigger_info">#333333</color>
+    <color name="grey_slide_menu_normal">#3b3b3b</color>
+    <color name="grey_slide_menu_tap">#323232</color>
+    <color name="grey_slide_menu_line">#525252</color>
+    <color name="milk_slide_menu_text">#ffffff</color> 
+    <color name="grey_slide_menu_user_text">#a8a8a8</color>
+    <color name="grey_action_bar">#333333</color>
+	<color name="divider">#484848</color>
+	<color name="about_line">#525252</color>
+	<color name="about_grey_title">#7f7f7f</color>
+	<color name="about_bottom_background">#1e1e1e</color>
+	<color name="about_force">#6c6c6c</color>
+	<color name="txt_trigger_info">#aaaaaa</color>
+	<color name="bg_tab">#3e3e3e</color>
+	<color name="bg_tab_selected">#2c2c2c</color>
+
+	<!-- Graph screen -->
+	<color name="bg_period_bar">#3e3e3e</color>
+	<color name="bg_period_indicator">#6db4e2</color>
+	<color name="bg_date_time_bar">#f33e3e3e</color>
+	<color name="txt_period_active">#ffffff</color>
+	<color name="txt_period_inactive">#757575</color>
+	<color name="txt_date">#ffffff</color>
+	<color name="txt_time">#aeaeae</color>
+
+	<!-- Server state colors -->
+    <color name="ok_color">#8cc41f</color>
+    <color name="high_color">#cd3dd0</color>
+    <color name="warning_color">#f7b516</color>
+    <color name="disaster_color">#c71d21</color>
+    <color name="average_color">#fa7329</color>
+    <color name="not_classified_color">#a1acb4</color>
+    <color name="information_color">#11a9f0</color>
+
+</resources>
